@@ -241,19 +241,71 @@ progress {
   }
 }
 
-/* ********** */
-/* First counter example */
-.counter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 6rem;
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1.6rem;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .app-header {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .answer {
+    transform: translateX(0.7rem);
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 9rem;
+  }
 }
 
-.counter * {
-  font-size: inherit;
-  padding: 0.8rem;
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  img {
+    width: 7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  img {
+    width: 5rem;
+  }
+
+  .result {
+    padding: 2rem 2rem;
+  }
 }
