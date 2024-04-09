@@ -89,6 +89,7 @@ function reducer(state: State, action: Action): State {
     case "restart":
       return {
         ...initialState,
+        questions: state.questions,
         status: "ready",
       };
 
